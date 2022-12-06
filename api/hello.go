@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-// Home is handler
-func Home(w http.ResponseWriter, r *http.Request) {
+// Hello is handler
+func Hello(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<h1>Hello from Go!</h1>")
 }
