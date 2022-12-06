@@ -1,3 +1,3 @@
 module github.com/luispfcanales/lambda-vercel
 
-go 1.19
+go 1.18
