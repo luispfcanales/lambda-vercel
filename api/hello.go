@@ -1,11 +1,12 @@
 package handler
 
 import (
-	"fmt"
 	"net/http"
+
+	"github.com/luispfcanales/lambda-vercel/pkg/response"
 )
 
 // Hello is handler
 func Hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<h1>Hello from Go!</h1>")
+	response.SendJSON(w, "send reponse to request /hello")
 }
